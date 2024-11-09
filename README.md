@@ -17,4 +17,4 @@ User=nikon
 Session=hyprland
 ```
 
-https://github.com/Fert028/Hyprland-config/blob/master/INFO/infoScreen.png
+![Image alt] (https://github.com/Fert028/Hyprland-config/blob/master/INFO/infoScreen.png)
