@@ -1,8 +1,6 @@
 # Hyprland-CONFIG
 
-Это конфиг Hyprland Arch Linux.
-
-Он подойдет даже для macbook. В этом конфиге добавленно управление яркостью экрана и подсветки клавиатуры с помошью пакета `brightnrssctl`.
+MacBook Arch Linux Hyprland
 
 Wallpapers: ~/Wallpapers
 
@@ -17,4 +15,4 @@ User=nikon
 Session=hyprland
 ```
 
-![Sreenshot](https://github.com/Fert028/Hyprland-config/blob/master/INFO/infoScreen.png)
+![Sreenshot](https://github.com/Fert028/Hyprland-config/blob/master/INFO/preview.png)
