@@ -1,0 +1,15 @@
+q
+save
+set skip_track_info=true
+colorscheme night
+colorscheme zenburn
+colorscheme jellybeans
+colorscheme gruvbox-alt
+colorscheme gruvbox-warm
+colorscheme gruvbox
+colorscheme green-mono-88
+colorscheme green
+colorscheme gray-88
+colorscheme amazon
+add ~/Музыка
+colorscheme dracula
