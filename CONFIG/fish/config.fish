@@ -1,6 +1,6 @@
 if status is-interactive
     # figlet Arch Linux
-    fastfetch
+    # fastfetch
     # nitch
 end
 
@@ -16,9 +16,10 @@ alias tt="tty-clock -cs -C7"
 alias e="yazi"
 alias f="fastfetch"
 alias rwaybar="pkill -SIGUSR2 waybar"
+alias b="bluetuith"
 
 #System
-alias sleep="systemctl suspend"
+alias sleep="systemctl suspend && hyprlock"
 alias bluetooth="sudo systemctl start bluetooth"
 
 #Wifi local

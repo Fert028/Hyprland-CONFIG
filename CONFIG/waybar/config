@@ -1,39 +1,29 @@
 {
   "position": "top",
     "margin-top" : 2,
-    "margin-left": 0,
-    "margin-right": 0,
+    "margin-left": 4,
+    "margin-right": 4,
     "height" : 28,
     "modules-center": [
       "hyprland/workspaces",
     ],
     "modules-left": [
       "cpu",
-      "temperature",
+//      "temperature",
       "memory",
-      "network"
+      "network",
+      "backlight"
     ],
     "modules-right": [
     "hyprland/language",
+//    "bluetooth",
     "pulseaudio",
-    "bluetooth",
     "battery",
     "clock",
     ],
-    "hyprland/window": {
-      "format": "{}",
-      "max-length": 40,
-      "rewrite": {
-        "": "Arch Linux MacBook"
-      },
-      "separate-outputs": true,
-    },
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
-//      "format-icons": {
-//        "active": " "
-//      },
       "sort-by-number": true,
       "persistent-workspaces": {
         "*": 5,
@@ -41,6 +31,8 @@
       },
     },
     "clock": {
+      "format": " {:%H:%M:%S}",
+      "interval": 1,
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
       "format-alt": "{:%Y-%m-%d}"
     },
@@ -110,5 +102,10 @@
       "interval": 10,
       "format": " {usage}%",
       "max-length": 10
+    },
+    "backlight": {
+        "device": "acpi_video1",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format": "{percent}% {icon}"
     },
 }

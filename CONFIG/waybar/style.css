@@ -7,70 +7,41 @@
 
 window#waybar {
   background-color: transparent;
+  color: @text;
 }
 
 #workspaces button {
   padding: 0 5px;
   margin: 0 2px;
-  border-radius: 8px;
-  background-color: transparent;
-  color: @mauve;
+  border-radius: 14px;
 }
 
 #workspaces button:hover {
   background: rgba(80, 80, 80, 0.8);
 }
 
+#workspaces button.active {
+  background-color: @text;
+  color: @crust;
+  padding: 0 14px;
+}
+
 #workspaces button.focused {
-  background-color: @rosewater;
-  color: @base;
+  background-color: @text;
+  color: @crust;
 }
 
 #workspaces button.urgent {
   background-color: #eb4d4b;
 }
 
-#workspaces button.active {
-  background-color: @peach;
-  color: @base;
-  /*padding: 0 10px;*/
+.modules-center {
+  padding: 2px 10px;
+  background-color: @crust;
+  border-radius: 14px;
 }
 
-#mode {
-  background-color: #64727d;
-  box-shadow: inset 0 -3px #ffffff;
-}
-
-#pulseaudio {
-  color: @peach;
-}
-#cpu {
-  color: @flamingo;
-}
-#memory {
-  color: @green;
-}
-#temperature {
-  color: @sky;
-}
-#network {
-  color: @yellow;
-}
-#battery {
-  color: @green;
-}
-#clock {
-  color: @sky;
-}
-#language {
-  color: @mauve;
-}
-#window {
-  color: @text;
-}
-
-
-#clock,
+/*#clock,*/
 #battery,
 #temperature,
 #network,
@@ -78,54 +49,20 @@ window#waybar {
 #bluetooth,
 #language,
 #memory,
-#cpu {
+#cpu,
+#backlight {
   padding: 0 14px;
-  margin: 0 6px;
-  background-color: @base;
-  border-radius: 10px;
-}
-.modules-center {
-  padding: 2px 10px;
-  background-color: @base;
-  border-radius: 10px
-}
-/*
-.modules-right,
-.modules-left,
-.modules-center {
-  background-color: @base;
-  border-radius: 10px;
-  padding: 0 10px;
-}
-*/
-#pulseaudio.muted {
-  color: @text;
-}
-#memory.warning {
-  color: @maroon;
-}
-#memory.critical {
-  color: @red; 
-}
-#bluetooth {
-  color: @blue;
-}
-#battery.full {
-  color: @green;
-}
-#battery.charging,
-#battery.plugged {
-  color: @sapphire;
-}
-#pulseaudio:hover,
-#bluetooth:hover {
-  background-color: @surface2;
+  margin: 0 4px;
+  background-color: @crust;
+  border-radius: 14px;
 }
 
-@keyframes blink {
-  to {
-    color: #000000;
-  }
+#clock {
+  background-color: @text;
+  color: @crust;
+  padding: 0 14px;
+  margin: 0 4px;
+  border-radius: 14px;
 }
 
 #battery.critical:not(.charging) {
@@ -138,7 +75,15 @@ window#waybar {
   animation-direction: alternate;
 }
 
-label:focus {
-  background-color: #000000;
+#pulseaudio:hover,
+#bluetooth:hover {
+  background-color: @surface2;
 }
 
+#memory.warning {
+  color: @maroon;
+}
+
+#memory.critical {
+  color: @red; 
+}
