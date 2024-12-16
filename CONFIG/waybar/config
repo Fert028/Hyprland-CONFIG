@@ -1,22 +1,20 @@
 {
   "position": "top",
     "margin-top" : 2,
-    "margin-left": 4,
-    "margin-right": 4,
+    "margin-left": 3,
+    "margin-right": 3,
     "height" : 28,
     "modules-center": [
       "hyprland/workspaces",
     ],
     "modules-left": [
       "cpu",
-//      "temperature",
       "memory",
       "network",
       "backlight"
     ],
     "modules-right": [
     "hyprland/language",
-//    "bluetooth",
     "pulseaudio",
     "battery",
     "clock",
@@ -56,7 +54,7 @@
       "max-length": 10,
       "on-click-right": "btop",
       "states": {
-        "warning": 70,
+        "warning": 60,
         "critical": 90
       }
     },
